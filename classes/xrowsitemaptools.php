@@ -343,12 +343,13 @@ class xrowSitemapTools
         $dir = new eZClusterDirectoryIterator( $dirname );
         foreach ( $dir as $file )
         {
-            echo "$file\n";
+            //echo "$file\n";
             if ( $file->exists() )
             {
                 $file->delete();
             }
         }
+        
         unset( $dir );
     }
 
